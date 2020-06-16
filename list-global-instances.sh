@@ -1,5 +1,4 @@
 #!/bin/bash
-echo ""
 for region in `aws ec2 describe-regions --output text | cut -d"." -f2-2`
 do
 echo -e "\nListing Instances in region:'$region'..."
